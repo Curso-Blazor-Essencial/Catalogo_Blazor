@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Me4sHdNcqnZ2sfSAEs2nLMTOHZeY60v+E7OFE8qzupeJYCSSEFu6OlFn+UuMcBsACbKYuu6Fj7Bq1qfSUFxBpg==",
+  "dgSpecHash": "Q/FM3Yv5Wp6U/LVXdVqJDT2mWFmq3k/Xa2OerSnJK5qzr4qANelqTCJir8wL5V+wqPyRwAC0FgKNjrEq0iq07Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Server\\Catalago_Blazor.Server.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

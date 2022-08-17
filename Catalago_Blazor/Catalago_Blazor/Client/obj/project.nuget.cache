@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2NAljkMYr4F/Rpg1mM398odqdD0BIU7wZMKpCwHxAUSvZZuzifbc+XkLHyOeynxC7FiVujzGUq7h5Eh57K3HJQ==",
+  "dgSpecHash": "MWavZ4pkV+r+M9h0tDpalNh7+Y4fxUFCu1P71ytW5Nqzj4wHclFTDSrwwakNZxhk1w0zbFv3MdlYq+k2NhXhtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Client\\Catalago_Blazor.Client.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.jsinterop\\6.0.8\\microsoft.jsinterop.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.8\\microsoft.jsinterop.webassembly.6.0.8.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

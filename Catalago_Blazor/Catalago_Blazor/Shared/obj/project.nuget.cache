@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wv9Lc+5wSTlonrCLqQABSyhsmQzPJt8WNE3UEPb0pWYYA+I8EAVPJaNH5QzB/0kI2eKSCM4TEP956gI3tWSugQ==",
+  "dgSpecHash": "x9xG8L5hEiCNXPVjx35a6ihVhMRigcbVSyHupVeqKyaY35cU/w2EVKd0NKD3TgqWrfIgapnUGlo6KOiMN/V/Mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\Catalago_Blazor.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
