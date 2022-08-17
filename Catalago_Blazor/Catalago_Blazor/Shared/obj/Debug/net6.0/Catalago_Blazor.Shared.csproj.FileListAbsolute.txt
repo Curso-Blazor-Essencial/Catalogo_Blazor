@@ -1,0 +1,12 @@
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\bin\Debug\net6.0\Catalago_Blazor.Shared.deps.json
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\bin\Debug\net6.0\Catalago_Blazor.Shared.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\bin\Debug\net6.0\Catalago_Blazor.Shared.pdb
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\refint\Catalago_Blazor.Shared.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\Catalago_Blazor.Shared.pdb
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Shared\obj\Debug\net6.0\ref\Catalago_Blazor.Shared.dll

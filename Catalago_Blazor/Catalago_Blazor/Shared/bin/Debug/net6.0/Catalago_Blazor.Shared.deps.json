@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Catalago_Blazor.Shared/1.0.0": {
+        "runtime": {
+          "Catalago_Blazor.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Catalago_Blazor.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
