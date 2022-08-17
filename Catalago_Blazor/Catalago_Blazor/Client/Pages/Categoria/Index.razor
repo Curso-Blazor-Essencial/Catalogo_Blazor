@@ -1,0 +1,59 @@
+﻿@page "/categoria"
+@inject HttpClient http
+
+<h2> Categorias </h2>
+
+@if(categorias==null)
+{
+    <p><em> Carregando... </em></p>
+}
+else if (categorias.Length == 0)
+{
+    <p><em>Não existem categorais cadastradas... </em></p>
+}
+else
+{
+    //exibir as categorais
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var categoria in categorias)
+            {
+                <tr>
+                    <td>@categoria.Nome</td>
+                    <td>@categoria.Descricao</td>
+                    <td>
+                          <a class="btn btn-primary" href=""> Editar </a>
+                    </td>
+                    <td>
+                          <a class="btn btn-primary" href=""> Deletar </a>
+                   </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    // Array de Categorais
+    Categoria[] categorias { get; set; }
+
+    // É executado quando o componente é inicializado e chama o método abaixo
+    protected override async Task OnInitializedAsync() => await CarregaCategorias();
+
+    // Vai fazer uma requisição get pra controller api 
+    // que vai retornar uma array de categorias para a variável categorias
+    async Task CarregaCategorias()
+    {
+        categorias = await http.GetFromJsonAsync<Categoria[]>("/api/categoria");
+    }
+}
+

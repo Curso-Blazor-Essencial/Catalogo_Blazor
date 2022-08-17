@@ -22,16 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/_Imports.razor]
