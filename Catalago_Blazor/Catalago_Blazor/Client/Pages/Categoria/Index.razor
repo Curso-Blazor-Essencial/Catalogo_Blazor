@@ -40,6 +40,9 @@ else
         </tbody>
     </table>
 }
+<Confirm @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma"> 
+    <div> Deseja realmente excluir este item </div>
+</Confirm>
 <div>
     <a class="btn btn-success" href="categoria/create"> Criar categoria </a>
 </div>
@@ -48,6 +51,9 @@ else
 @code {
     // Array de Categorais
     Categoria[] categorias { get; set; }
+
+    Confirm confirma;
+    int codigoCategoria;
 
     // É executado quando o componente é inicializado e chama o método abaixo
     protected override async Task OnInitializedAsync() => await CarregaCategorias();
@@ -58,10 +64,24 @@ else
     {
         categorias = await http.GetFromJsonAsync<Categoria[]>("api/categoria");
     }
-    async void DeletarCategoria (int categoriaId)
+    void DeletarCategoria (int categoriaId)
     {
-        await http.DeleteAsync($"api/categoria/{categoriaId}");
+        confirma.Exibir();
+        codigoCategoria = categoriaId;
+        //await http.DeleteAsync($"api/categoria/{categoriaId}");
+        //await CarregaCategorias();
+    }
+
+    async Task DeletaConfirma()
+    {
+        await http.DeleteAsync($"/api/categoria/{codigoCategoria}");
+        confirma.Ocultar();
         await CarregaCategorias();
+    }
+
+    void CancelaConfirma()
+    {
+        confirma.Ocultar();
     }
 }
 
