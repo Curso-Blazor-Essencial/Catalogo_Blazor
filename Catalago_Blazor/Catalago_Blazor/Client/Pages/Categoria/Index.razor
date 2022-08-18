@@ -9,7 +9,7 @@
 }
 else if (categorias.Length == 0)
 {
-    <p><em>Não existem categorais cadastradas... </em></p>
+    <p><em>Não existem categorias cadastradas... </em></p>
 }
 else
 {
@@ -41,8 +41,9 @@ else
     </table>
 }
 <div>
-    <a class="btn btn-success"> Criar categoria </a>
+    <a class="btn btn-success" href="categoria/create"> Criar categoria </a>
 </div>
+
 
 @code {
     // Array de Categorais
@@ -55,12 +56,12 @@ else
     // que vai retornar uma array de categorias para a variável categorias
     async Task CarregaCategorias()
     {
-        categorias = await http.GetFromJsonAsync<Categoria[]>("/api/categoria");
-        categorias = new Categoria[]
-        {
-            new Categoria(){CategoriaId=1,Nome="A",Descricao="A"},
-            new Categoria(){CategoriaId=1,Nome="B",Descricao="B"}
-        };
+        categorias = await http.GetFromJsonAsync<Categoria[]>("api/categoria");
+        //categorias = new Categoria[]
+        //{
+        //    new Categoria(){CategoriaId=1,Nome="A",Descricao="A"},
+        //    new Categoria(){CategoriaId=1,Nome="B",Descricao="B"}
+        //};
     }
 }
 
