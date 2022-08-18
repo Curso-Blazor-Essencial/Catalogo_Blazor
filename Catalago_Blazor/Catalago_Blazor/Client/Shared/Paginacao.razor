@@ -1,0 +1,64 @@
+﻿<h3>Paginacao</h3>
+
+@code {
+    [Parameter]
+    public int PaginaAtual { get; set; }
+    [Parameter]
+    public int QuantidadeTotalPaginas { get; set; }
+    [Parameter]
+    public int Raio { get; set; }
+    [Parameter]
+    public EventCallback<int> PaginaSelecionada { get; set; }
+
+    class LinkModel
+    {
+        public LinkModel(int page) : this(page, true)
+        { }
+        public LinkModel(int page, bool enabled) : this(page, enabled, page.ToString())
+        { }
+        public LinkModel(int page, bool enabled, string text)
+        {
+            Page = page;
+            Enabled = enabled;
+            Text = text;
+        }
+        public string Text { get; set; }
+        public int Page { get; set; }
+        public bool Enabled { get; set; } = true;
+        public bool Active { get; set; } = false;
+    }
+
+    protected override void OnParametersSet()
+    {
+        CarregaPaginas();
+    }
+
+    private void CarregaPaginas()
+    {
+        var links = new List<LinkModel>();
+
+        // Tratar o link da página anterior
+        var isLinkPaginaAnteriorHabilitado = PaginaAtual != 1;
+        var paginaAnterior = PaginaAtual - 1;
+
+        links.Add(new LinkModel(paginaAnterior, isLinkPaginaAnteriorHabilitado, "Anterior"));
+
+        // Tratar o link das páginas específicas
+        for (int i = 1; 1 <= QuantidadeTotalPaginas; i++)
+        {
+            if (i >= PaginaAtual - Raio && i <= PaginaAtual + Raio)
+            {
+                links.Add(new LinkModel(i)
+                    {
+                        Active = PaginaAtual == i
+                    });
+            }
+        }
+        // Tratar o link para a próxima pagina
+        var isLinkProximaPaginaHabilitado = PaginaAtual != QuantidadeTotalPaginas;
+        var proximaPagina = PaginaAtual + 1;
+
+        links.Add(new LinkModel(paginaAnterior, isLinkPaginaAnteriorHabilitado, "Próximo"));
+    }
+
+}
