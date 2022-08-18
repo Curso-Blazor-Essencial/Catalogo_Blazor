@@ -33,7 +33,7 @@ else
                           <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId"> Editar </a>
                     </td>
                     <td>
-                          <a class="btn btn-danger" href=""> Deletar </a>
+                          <a class="btn btn-danger" @onclick=@(()=> DeletarCategoria(categoria.CategoriaId))> Deletar </a>
                    </td>
                 </tr>
             }
@@ -57,11 +57,11 @@ else
     async Task CarregaCategorias()
     {
         categorias = await http.GetFromJsonAsync<Categoria[]>("api/categoria");
-        //categorias = new Categoria[]
-        //{
-        //    new Categoria(){CategoriaId=1,Nome="A",Descricao="A"},
-        //    new Categoria(){CategoriaId=1,Nome="B",Descricao="B"}
-        //};
+    }
+    async void DeletarCategoria (int categoriaId)
+    {
+        await http.DeleteAsync($"api/categoria/{categoriaId}");
+        await CarregaCategorias();
     }
 }
 
