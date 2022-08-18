@@ -3,7 +3,7 @@
 
 <h2> Categorias </h2>
 
-@if(categorias==null)
+@if (categorias == null)
 {
     <p><em> Carregando... </em></p>
 }
@@ -24,23 +24,23 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach(var categoria in categorias)
+            @foreach (var categoria in categorias)
             {
                 <tr>
                     <td>@categoria.Nome</td>
                     <td>@categoria.Descricao</td>
                     <td>
-                          <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId"> Editar </a>
+                        <a class="btn btn-primary" href="categoria/edit/@categoria.CategoriaId"> Editar </a>
                     </td>
                     <td>
-                          <a class="btn btn-danger" @onclick=@(()=> DeletarCategoria(categoria.CategoriaId))> Deletar </a>
-                   </td>
+                        <a class="btn btn-danger" @onclick=@(()=> DeletarCategoria(categoria.CategoriaId))> Deletar </a>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
 }
-<Confirm @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma"> 
+<Confirm @ref="confirma" onCancela="@CancelaConfirma" onConfirma="@DeletaConfirma">
     <div> Deseja realmente excluir este item </div>
 </Confirm>
 <div>
@@ -58,13 +58,13 @@ else
     // É executado quando o componente é inicializado e chama o método abaixo
     protected override async Task OnInitializedAsync() => await CarregaCategorias();
 
-    // Vai fazer uma requisição get pra controller api 
+    // Vai fazer uma requisição get pra controller api
     // que vai retornar uma array de categorias para a variável categorias
     async Task CarregaCategorias()
     {
         categorias = await http.GetFromJsonAsync<Categoria[]>("api/categoria");
     }
-    void DeletarCategoria (int categoriaId)
+    void DeletarCategoria(int categoriaId)
     {
         confirma.Exibir();
         codigoCategoria = categoriaId;

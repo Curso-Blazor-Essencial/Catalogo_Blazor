@@ -1,4 +1,6 @@
-﻿using Catalago_Blazor.Server.Context;
+﻿using Catalago_Blazor.Client.Shared.Recursos;
+using Catalago_Blazor.Server.Context;
+using Catalago_Blazor.Server.Util;
 using Catalago_Blazor.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,9 +21,12 @@ namespace Catalago_Blazor.Server.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Categoria>>> Get()
+        public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao)
         {
-            return await context.Categorias.AsNoTracking().ToListAsync();
+            var queryable = context.Categorias.AsQueryable();
+            await HttpContext.InserirParametroEmPageResponde(queryable, paginacao.QuantidadePorPagina);
+            return await queryable.Paginar(paginacao).ToListAsync();
+
         }
 
         [HttpGet("{id}", Name = "GetCategoria")]
