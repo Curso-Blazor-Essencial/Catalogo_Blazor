@@ -47,8 +47,7 @@ namespace Catalago_Blazor.Server.Controllers
             return Ok(categoria);
         }
 
-        [HttpDelete]
-        [HttpGet("{id}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult<Categoria>> Delete(int id)
         {
             var categoria = new Categoria { CategoriaId = id };
