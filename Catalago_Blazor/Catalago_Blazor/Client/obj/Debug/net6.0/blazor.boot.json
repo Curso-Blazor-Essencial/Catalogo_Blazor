@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
       "Catalago_Blazor.Shared.dll": "sha256-ZkEVj4HbHuOQMbtYMgsGXhKCgnwFP+WPuZhGHAiH5kk=",
-      "Catalago_Blazor.Client.dll": "sha256-xnBahYqX3MrCB+nfEJDXWuuSrVYiyoM9vJzX\/21toig="
+      "Catalago_Blazor.Client.dll": "sha256-0dECGU4Bxp6fYcOCDGPgx7gIv68JfFmbV5DNz6m0eOA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Catalago_Blazor.Shared.pdb": "sha256-abFtJ0ceMbvf1x84u7syrs2BUsXo41lCktZtsCFvFpc=",
-      "Catalago_Blazor.Client.pdb": "sha256-e15UyDoZ97wN93Q3+M4UsktUMV9PKCc7xBjaIYJyXCs="
+      "Catalago_Blazor.Client.pdb": "sha256-DSi86JwwvyKlFBfXFq6nOJ4CSHHy2iHMA28F0tweL1s="
     },
     "runtime": {
       "dotnet.6.0.8.5qvbcwublj.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

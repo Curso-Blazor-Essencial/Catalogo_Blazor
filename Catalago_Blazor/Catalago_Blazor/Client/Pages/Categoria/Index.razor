@@ -5,6 +5,15 @@
 <div>
     <a class="btn btn-success" href="categoria/create">Nova Categoria</a>
 </div>
+<form class="form-inline">
+    <div class="form-group mb-2">
+        <label for="filter-name" class="sr-only">Filtro</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome" />
+        <button type="button" class="btn btn-primary mb-2" @onclick=Filtrar>Filtrar</button>
+        <button type="button" class="btn btn-danger mb-2" @onclick=LimparFiltro>Limpar</button>
+    </div>
+    <br />
+</form>
 
 @if (categorias == null)
 {
@@ -57,11 +66,25 @@ else
 
     private int QuantidadeTotalPaginas;
     private int paginaAtual = 1;
+    private string nomeFiltro = string.Empty;
 
     Confirm confirma;
 
     protected override async Task OnInitializedAsync()
     {
+        await CarregaCategorias();
+    }
+
+    private async Task Filtrar()
+    {
+        paginaAtual = 1;
+        await CarregaCategorias();
+    }
+
+    private async Task LimparFiltro()
+    {
+        nomeFiltro = string.Empty;
+        paginaAtual = 1;
         await CarregaCategorias();
     }
 
@@ -75,7 +98,7 @@ else
     {
 
         var httpResponse =
-            await http.GetAsync($"api/categoria?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}");
+            await http.GetAsync($"api/categoria?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={nomeFiltro}");
 
         if (httpResponse.IsSuccessStatusCode)
         {
