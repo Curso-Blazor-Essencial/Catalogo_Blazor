@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PhSJ/53efvYsAcwu3CADNHTlVpJE7ySCBTan4jKlhNU=",
+  "Hash": "MS1cnVFYLzwrymU83o6PvsQreK6Jyvw8DH6ZBL95uj8=",
   "Source": "Catalago_Blazor.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,6 +7155,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Client\\wwwroot\\Utils.js",
+      "SourceId": "Catalago_Blazor.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Utils.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Utils.js"
     }
   ]
 }

@@ -2,11 +2,8 @@
 @inject HttpClient http
 @using System.Text.Json
 
-<div>
-    <a class="btn btn-success" href="categoria/create">Nova Categoria</a>
-</div>
 <form class="form-inline">
-    <div class="form-group mb-2">
+    <div class="form-group">
         <label for="filter-name" class="sr-only">Filtro</label>
         <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome" />
         <button type="button" class="btn btn-primary mb-2" @onclick=Filtrar>Filtrar</button>
@@ -14,6 +11,10 @@
     </div>
     <br />
 </form>
+
+<Confirm @ref="confirma" onCancela="@CancelaConfirm" onConfirm="@DeletaConfirm">
+    <div>Deseja realmente excluir este item ?</div>
+</Confirm>
 
 @if (categorias == null)
 {
@@ -48,9 +49,11 @@ else
     </table>
 }
 
-<Confirm @ref="confirma" onCancela="@CancelaConfirm" onConfirm="@DeletaConfirm">
-    <div>Deseja realmente excluir este item ?</div>
-</Confirm>
+<div>
+    <a class="btn btn-success" href="categoria/create">Nova Categoria</a>
+</div>
+
+
 
 <hr />
 
