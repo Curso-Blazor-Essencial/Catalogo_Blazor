@@ -1,4 +1,4 @@
-﻿@if (ExibirConfirmacao)
+﻿@if (ExibirConfirmcao)
 {
     <div class="modal-backdrop show"></div>
 
@@ -21,7 +21,7 @@
                         data-dismiss="modal">
                         Cancelar
                     </button>
-                    <button @onclick="onConfirma" type="button"
+                    <button @onclick="onConfirm" type="button"
                         class="btn btn-primary">
                         OK
                     </button>
@@ -32,12 +32,12 @@
 }
 
 @code {
-    [Parameter] public bool ExibirConfirmacao { get; set; } = false;
-    [Parameter] public string Titulo { get; set; } = "Confirma Exclusão ?";
+    [Parameter] public bool ExibirConfirmcao { get; set; } = false;
+    [Parameter] public string Titulo { get; set; } = "Confirm Exclusão ?";
     [Parameter] public RenderFragment ChildContent { get; set; }
-    [Parameter] public EventCallback onConfirma { get; set; }
+    [Parameter] public EventCallback onConfirm { get; set; }
     [Parameter] public EventCallback onCancela { get; set; }
 
-    public void Exibir() => ExibirConfirmacao = true;
-    public void Ocultar() => ExibirConfirmacao = false;
+    public void Exibir() => ExibirConfirmcao = true;
+    public void Ocultar() => ExibirConfirmcao = false;
 }
