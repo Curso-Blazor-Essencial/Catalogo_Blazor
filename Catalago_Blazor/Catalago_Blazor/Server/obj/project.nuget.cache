@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/FM3Yv5Wp6U/LVXdVqJDT2mWFmq3k/Xa2OerSnJK5qzr4qANelqTCJir8wL5V+wqPyRwAC0FgKNjrEq0iq07Q==",
+  "dgSpecHash": "CDg2mtR+OUHVbi7lVa5y10xUhLHReR2TKXIAF6FrD9MhrygS8pCGP5Mywupzwa//Pb8OA2q4TV9F4BLWNK6YaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Server\\Catalago_Blazor.Server.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Server\\Catalago_Blazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",

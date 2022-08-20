@@ -121,11 +121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\Catalago_Blazor.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\Catalago_Blazor.Shared.csproj",
       "projectName": "Catalago_Blazor.Shared",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\Catalago_Blazor.Shared.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\Catalago_Blazor.Shared.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
