@@ -16,6 +16,6 @@ namespace Catalago_Blazor.Shared.Models
         // Indica o relacionamento do produto com 1 categoria
         public int CategoriaId { get; set; }
         // Propriedade de navegação
-        public virtual Categoria Categoria { get; set; }
+        public virtual Categoria? Categoria { get; set; }
     }
 }
