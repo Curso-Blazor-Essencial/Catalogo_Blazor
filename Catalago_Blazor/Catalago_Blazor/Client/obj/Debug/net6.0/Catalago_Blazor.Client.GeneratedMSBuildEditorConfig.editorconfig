@@ -11,73 +11,73 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Catalago_Blazor.Client
 build_property.RootNamespace = Catalago_Blazor.Client
-build_property.ProjectDir = C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Client\
+build_property.ProjectDir = C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Client
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/App.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/CategoriaForm.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/CategoriaForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENhdGVnb3JpYUZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Confirm.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Confirm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENvbmZpcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Create.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Edit.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Index.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Categoria/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Index.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Create.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1xDcmVhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Edit.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1xFZGl0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Index.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/ProdutoForm.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Pages/Produto/ProdutoForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b1xQcm9kdXRvRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/ImagemFoto.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/ImagemFoto.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEltYWdlbUZvdG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/Paginacao.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/Paginacao.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhZ2luYWNhby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/_Imports.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/MainLayout.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-phfxe6lq73
 
-[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/NavMenu.razor]
+[C:/Users/Usuario/Documents/GitHub/Catalogo_Blazor/Catalago_Blazor/Catalago_Blazor/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qd7132z0p0
