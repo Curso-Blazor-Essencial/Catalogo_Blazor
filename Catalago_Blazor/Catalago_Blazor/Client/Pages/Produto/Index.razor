@@ -3,10 +3,18 @@
 @inject HttpClient http
 @inject NavigationManager navigation
 
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div>
+            <a class="btn btn-success" href="produto/create">Nova Produto</a>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <h2> Somente usuário Admin pode incluir um produto!</h2>
+    </NotAuthorized>
+</AuthorizeView>
 
-<div>
-    <a class="btn btn-success" href="produto/create">Nova Produto</a>
-</div>
+
 <form class="form-inline">
     <div class="form-group">
         <label for="filter-name" class="sr-only">Filtro</label>

@@ -12,10 +12,17 @@ namespace Catalago_Blazor.Client.Auth
             await Task.Delay(4000);
             //idicamos se o usuátio está autenticando e também seus claims
             // definição de identidade anônima
-            var usuario = new ClaimsIdentity();
+            var usuario = new ClaimsIdentity(new List<Claim>()
+            {
+                new Claim("Chave", "Valor"),
+                new Claim(ClaimTypes.Name,"LNC") },
+                //new Claim(ClaimTypes.Role,"Admin")}, 
+                "demo");
+
 
             // entrando na aplicação como usuário anônimo
             return await Task.FromResult(new AuthenticationState(new ClaimsPrincipal(usuario)));
         }
     }
 }
+

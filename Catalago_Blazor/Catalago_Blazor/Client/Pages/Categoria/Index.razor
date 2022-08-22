@@ -2,6 +2,8 @@
 @inject HttpClient http
 @using System.Text.Json
 
+<AuthorizeView>
+    <Authorized> 
 <form class="form-inline">
     <div class="form-group">
         <label for="filter-name" class="sr-only">Filtro</label>
@@ -61,7 +63,11 @@ else
            Raio="2" PaginaSelecionada="PaginaSelecionada">
 
 </Paginacao>
-
+    </Authorized>
+    <NotAuthorized>
+        <h2>Usuário não autorizado</h2>
+    </NotAuthorized>
+</AuthorizeView>
 
 @code {
 
