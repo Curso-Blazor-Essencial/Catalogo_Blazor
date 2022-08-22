@@ -6,7 +6,7 @@
 <hr />
 <h2> Lojinha do Fantasma Camarada</h2>
 
-<AuthorizeView>
+@*<AuthorizeView>
     <Authorized>
         <h2>
             Olá, @context.User.Identity.Name!
@@ -22,4 +22,28 @@
             Usuário não autorizado!
         </h2>
     </NotAuthorized>
-</AuthorizeView>
+</AuthorizeView>*@
+
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+        //obtendo informações sobre o estado do usuário
+        var user = authState.User;
+
+        if(user.Identity.IsAuthenticated)
+        {
+            Console.WriteLine($"Bem vindo {user.Identity.Name}");
+            if(user.IsInRole("Admin"))
+            {
+                Console.WriteLine("Você faz parte do perfil Admin");
+            }
+        }
+        else{
+            Console.WriteLine("Usuário não autenticado!");
+        }
+    }
+}
