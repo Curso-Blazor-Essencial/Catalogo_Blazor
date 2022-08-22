@@ -22,6 +22,11 @@ namespace Catalago_Blazor.Server.Controllers
         {
             return await context.Produtos.AsNoTracking().ToListAsync();
         }
+        [HttpGet("categorias/{id:int}")]
+        public async Task<ActionResult<List<Produto>>> GetProdutosCategoria(int id)
+        {
+            return await context.Produtos.Where(p => p.CategoriaId == id).ToListAsync();
+        }
 
 
         [HttpGet("{id}", Name = "GetProduto")]
