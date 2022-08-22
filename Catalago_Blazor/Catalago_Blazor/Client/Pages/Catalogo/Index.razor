@@ -8,7 +8,7 @@
         {
             @foreach (var categoria in categorias)
             {
-                <option value="@categoria.CategoriaId">
+                <option value="@categoria.CategoriaId" selected="@(categoria.CategoriaId == CategoriaId ? true : false)">
                     @categoria.Nome
                 </option>
             }
