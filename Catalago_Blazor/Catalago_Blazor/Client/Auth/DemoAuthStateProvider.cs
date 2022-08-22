@@ -15,8 +15,8 @@ namespace Catalago_Blazor.Client.Auth
             var usuario = new ClaimsIdentity(new List<Claim>()
             {
                 new Claim("Chave", "Valor"),
-                new Claim(ClaimTypes.Name,"LNC") },
-                //new Claim(ClaimTypes.Role,"Admin")}, 
+                new Claim(ClaimTypes.Name,"LNC"),
+                new Claim(ClaimTypes.Role,"Admin")},
                 "demo");
 
 
