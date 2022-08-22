@@ -14,4 +14,5 @@ builder.Services.AddAuthorizationCore();
 //Depedência do arquivo de Autenticação de criamos
 builder.Services.AddScoped<AuthenticationStateProvider, DemoAuthStateProvider>();
 
+
 await builder.Build().RunAsync();
