@@ -1,4 +1,6 @@
-﻿using Catalago_Blazor.Server.Context;
+﻿using Catalago_Blazor.Client.Shared.Recursos;
+using Catalago_Blazor.Server.Context;
+using Catalago_Blazor.Server.Util;
 using Catalago_Blazor.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,12 +18,14 @@ namespace Catalago_Blazor.Server.Controllers
             this.context = context;
         }
 
-        [HttpGet]
+        [HttpGet("todos")]
 
         public async Task<ActionResult<List<Produto>>> Get()
         {
             return await context.Produtos.AsNoTracking().ToListAsync();
         }
+
+
         [HttpGet("categorias/{id:int}")]
         public async Task<ActionResult<List<Produto>>> GetProdutosCategoria(int id)
         {
@@ -35,6 +39,21 @@ namespace Catalago_Blazor.Server.Controllers
         {
             return await context.Produtos.FirstOrDefaultAsync(x => x.ProdutoId == id);
         }
+
+        public async Task<ActionResult<List<Produto>>> Get([FromQuery] Paginacao paginacao, [FromQuery] string? nome)
+        {
+            var queryable = context.Produtos.AsQueryable();
+
+            if (!string.IsNullOrEmpty(nome))
+            {
+                queryable = queryable.Where(x => x.Nome.Contains(nome));
+            }
+
+            await HttpContext.InserirParametroEmPageResponde(queryable, paginacao.QuantidadePorPagina);
+            return await queryable.Paginar(paginacao).ToListAsync();
+
+        }
+
 
         [HttpPost]
         public async Task<ActionResult<Produto>> Post(Produto produto)

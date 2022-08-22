@@ -3,6 +3,21 @@
 @inject HttpClient http
 @inject NavigationManager navigation
 
+
+<div>
+    <a class="btn btn-success" href="produto/create">Nova Produto</a>
+</div>
+<form class="form-inline">
+    <div class="form-group">
+        <label for="filter-name" class="sr-only">Filtro</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" @bind="nomeFiltro" placeholder="Filtrar pelo nome" />
+        <button type="button" class="btn btn-primary mb-2" @onclick=Filtrar>Filtrar</button>
+        <button type="button" class="btn btn-danger mb-2" @onclick=LimparFiltro>Limpar</button>
+    </div>
+    <br />
+</form>
+
+
 @if (produtos == null)
 {
     <p><em>Carregando...</em></p>
@@ -31,7 +46,7 @@ else
                     <td>@produto.Descricao</td>
                     <td>@produto.Preco</td>
                     <td><a class="btn btn-primary" href="produto/edit/@produto.ProdutoId">Editar</a> </td>
-                      <td><a class="btn btn-danger" @onclick="@(()=> DeletarProduto(produto.ProdutoId))">Deletar</a> </td>
+                    <td><a class="btn btn-danger" @onclick="@(()=> DeletarProduto(produto.ProdutoId))">Deletar</a> </td>
                 </tr>
             }
         </tbody>
@@ -43,13 +58,12 @@ else
 </Confirm>
 
 
-<div>
-    <a class="btn btn-success" href="produto/create">Nova Produto</a>
-</div>
-
-
-
 <hr />
+
+<Paginacao QuantidadeTotalPaginas="QuantidadeTotalPaginas" paginaAtual="paginaAtual"
+           Raio="2" PaginaSelecionada="PaginaSelecionada">
+
+</Paginacao>
 
 
 @code {
@@ -58,16 +72,34 @@ else
     Confirm confirm;
     int codigoProduto;
 
+    private string nomeFiltro = string.Empty;
+    private int QuantidadeTotalPaginas;
+    private int paginaAtual = 1;
+
     protected override async Task OnInitializedAsync()
     {
         await CarregaProdutos();
     }
-
-    async Task CarregaProdutos()
+    async Task CarregaProdutos(int pagina = 1, int quantidadePorPagina = 5)
     {
-        produtos = await http.GetFromJsonAsync<List<Produto>>("/api/produto");
-    }
 
+        var httpResponse =
+            await http.GetAsync($"api/produto?pagina={pagina}&quantidadePorPagina={quantidadePorPagina}&nome={nomeFiltro}");
+
+        if (httpResponse.IsSuccessStatusCode)
+        {
+            QuantidadeTotalPaginas =
+                int.Parse(httpResponse.Headers.GetValues("totalPaginas").FirstOrDefault());
+
+            var responseString = await httpResponse.Content.ReadAsStringAsync();
+
+            produtos = JsonSerializer.Deserialize<List<Produto>>(responseString,
+                new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+        }
+    }
     void DeletarProduto(int produtoId)
     {
         confirm.Exibir();
@@ -86,4 +118,21 @@ else
         await CarregaProdutos();
     }
 
+    private async Task Filtrar()
+    {
+        paginaAtual = 1;
+        await CarregaProdutos();
+    }
+
+    private async Task LimparFiltro()
+    {
+        nomeFiltro = string.Empty;
+        paginaAtual = 1;
+        await CarregaProdutos();
+    }
+    private async Task PaginaSelecionada(int pagina)
+    {
+        paginaAtual = pagina;
+        await CarregaProdutos(pagina);
+    }
 }
