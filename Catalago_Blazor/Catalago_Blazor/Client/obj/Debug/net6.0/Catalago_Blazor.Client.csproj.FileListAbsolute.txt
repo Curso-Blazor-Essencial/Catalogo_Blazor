@@ -1644,3 +1644,7 @@ C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazo
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Client\obj\Debug\net6.0\refint\Catalago_Blazor.Client.dll
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Client\obj\Debug\net6.0\Catalago_Blazor.Client.pdb
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Client\obj\Debug\net6.0\ref\Catalago_Blazor.Client.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Client\obj\Debug\net6.0\build-gz\LYK+Tv4g.gz

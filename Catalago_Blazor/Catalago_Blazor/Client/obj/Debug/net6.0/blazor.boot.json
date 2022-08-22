@@ -9,6 +9,7 @@
     "assembly": {
       "Microsoft.AspNetCore.Authorization.dll": "sha256-UrVyaila4UaM9NG7wgfD9o+ih1r3xt3rq4W7Z+SCE3w=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8yq2GCAfNZmhru8HZW\/xr9jDHwAS+MD4B1GGQFzi2Pg=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-Se1CRSwnBHgCoturPAXMFgWwtWcgwm+dBntorIwfN8Q=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-I5BEosbTOX5zg7agqWZo14z3aViOJYbMCWeRLInDYiQ=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-mCmX0kVk855jFuyFyPzo67\/RUGcqcdN9PAEJFW+q4nk=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-YBkayjUkGHqPFwRfHSnDaZ62t4oeESWcId4vO\/nW7O4=",
@@ -197,14 +198,14 @@
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
       "Catalago_Blazor.Shared.dll": "sha256-2waQCE+pgsspyXEUAGBJY\/1POAMQpJd4FIZaDAWCTpk=",
-      "Catalago_Blazor.Client.dll": "sha256-\/Mtx1FXgwN\/8n5SuPOGxAn22d0O7Qs9khQwH2L55HFY="
+      "Catalago_Blazor.Client.dll": "sha256-RScD5haYxZaQlo593NyH0MfakNSC4TT3db+QrTslw7Y="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Catalago_Blazor.Shared.pdb": "sha256-kGTnF\/ruWFNY9P+3BlZUUW9oy9SSkw9ggPL69M8jt5c=",
-      "Catalago_Blazor.Client.pdb": "sha256-jjlGWJ3RkJxeMMWF5Zhb04ILDYLrpWcBGu2NHda3e8U="
+      "Catalago_Blazor.Client.pdb": "sha256-WC5CWegV9UtDrvWhf5+IDnVr46BCg3OK8Es5uCbbbZo="
     },
     "runtime": {
       "dotnet.6.0.8.5qvbcwublj.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

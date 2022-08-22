@@ -160,3 +160,4 @@ C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazo
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Server\obj\Debug\net6.0\Catalago_Blazor.Server.pdb
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Server\obj\Debug\net6.0\Catalago_Blazor.Server.genruntimeconfig.cache
 C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Catalago_Blazor\Server\obj\Debug\net6.0\ref\Catalago_Blazor.Server.dll
+C:\Users\Usuario\Documents\GitHub\Catalogo_Blazor\Catalago_Blazor\Catalago_Blazor\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll

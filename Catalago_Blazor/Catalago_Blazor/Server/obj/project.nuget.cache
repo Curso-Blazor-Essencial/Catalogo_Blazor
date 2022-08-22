@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/FM3Yv5Wp6U/LVXdVqJDT2mWFmq3k/Xa2OerSnJK5qzr4qANelqTCJir8wL5V+wqPyRwAC0FgKNjrEq0iq07Q==",
+  "dgSpecHash": "F+JJechdh5lZIhPtmORdi8YTQC2q+8JqcK4+cqx+2Z3h7y/pEypH/NIKrEu1a3z65IywPbTNxpnbx0x5C2KCGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Catalogo_Blazor\\Catalago_Blazor\\Catalago_Blazor\\Server\\Catalago_Blazor.Server.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.8\\microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.8\\microsoft.aspnetcore.components.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.8\\microsoft.aspnetcore.components.forms.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.8\\microsoft.aspnetcore.components.web.6.0.8.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.8\\microsoft.aspnetcore.components.webassembly.6.0.8.nupkg.sha512",

@@ -56,6 +56,23 @@
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Components.Authorization/6.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components": "6.0.8"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/6.0.8": {
         "type": "package",
         "dependencies": {
@@ -1152,6 +1169,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Catalago_Blazor.Shared": "1.0.0",
+          "Microsoft.AspNetCore.Components.Authorization": "6.0.8",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.8"
         },
         "compile": {
@@ -1241,6 +1259,21 @@
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Authorization/6.0.8": {
+      "sha512": "JzuvvYVCCceKvIeG8gFx5WRMHcJfOJXHcdT5BXzsAtB455QueCwqSaDGB/qySN2v8kLZ5n7qVRVXKBY+vr4MHg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.authorization/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.xml",
+        "microsoft.aspnetcore.components.authorization.6.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.components.authorization.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Components.Forms/6.0.8": {

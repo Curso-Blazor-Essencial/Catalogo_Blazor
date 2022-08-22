@@ -52,6 +52,18 @@
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/6.0.8": {},
+      "Microsoft.AspNetCore.Components.Authorization/6.0.8": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components": "6.0.8"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.822.36316"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/6.0.8": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "6.0.8"
@@ -609,6 +621,7 @@
       "Catalago_Blazor.Client/1.0.0": {
         "dependencies": {
           "Catalago_Blazor.Shared": "1.0.0",
+          "Microsoft.AspNetCore.Components.Authorization": "6.0.8",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.8"
         },
         "runtime": {
@@ -658,6 +671,13 @@
       "sha512": "sha512-87BAjhlq/NEo00EtVc2MzXwaGTfF8q6fbeoefd/u3wN13G0LrCMAt5hUMNeu4Fz4TOz5FbuHUoBopPo7mENTuQ==",
       "path": "microsoft.aspnetcore.components.analyzers/6.0.8",
       "hashPath": "microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Authorization/6.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JzuvvYVCCceKvIeG8gFx5WRMHcJfOJXHcdT5BXzsAtB455QueCwqSaDGB/qySN2v8kLZ5n7qVRVXKBY+vr4MHg==",
+      "path": "microsoft.aspnetcore.components.authorization/6.0.8",
+      "hashPath": "microsoft.aspnetcore.components.authorization.6.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.Forms/6.0.8": {
       "type": "package",
