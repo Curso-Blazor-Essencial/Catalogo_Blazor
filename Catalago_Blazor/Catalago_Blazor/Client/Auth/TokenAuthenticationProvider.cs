@@ -92,16 +92,34 @@ namespace Blazor_Catalogo.Client.Auth
 
         public async Task Login(string token)
         {
-            await js.SetInLocalStorage(tokenKey, token);
-            var authState = CreateAuthenticationState(token);
-            NotifyAuthenticationStateChanged(Task.FromResult(authState));
+            try
+            {
+                await js.SetInLocalStorage(tokenKey, token);
+                var authState = CreateAuthenticationState(token);
+                NotifyAuthenticationStateChanged(Task.FromResult(authState));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         public async Task Logout()
         {
-            await js.RemoveItem(tokenKey);
-            http.DefaultRequestHeaders.Authorization = null;
-            NotifyAuthenticationStateChanged(Task.FromResult(notAuthenticate));
+            try
+            {
+                await js.RemoveItem(tokenKey);
+                http.DefaultRequestHeaders.Authorization = null;
+                NotifyAuthenticationStateChanged(Task.FromResult(notAuthenticate));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
     }
 }
