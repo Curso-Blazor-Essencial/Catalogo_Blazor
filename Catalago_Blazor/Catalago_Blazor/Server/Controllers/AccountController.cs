@@ -44,7 +44,16 @@ namespace Blazor_Catalogo.Server.Controllers
 
             if (result.Succeeded)
             {
-                return GenerateToken(model);
+                //incluir o novo usuário ao perfil User
+                await _userManager.AddToRoleAsync(user, "User");
+
+                if (user.Email.StartsWith("admin"))
+                {
+                    await _userManager.AddToRoleAsync(user, "Admin");
+                }
+
+                return await GenerateTokenAsync(model);
+
             }
             else
             {
@@ -60,7 +69,7 @@ namespace Blazor_Catalogo.Server.Controllers
 
             if (result.Succeeded)
             {
-                return GenerateToken(userInfo);
+                return await GenerateTokenAsync(userInfo);
             }
             else
             {
@@ -68,15 +77,28 @@ namespace Blazor_Catalogo.Server.Controllers
             }
         }
 
-        private UserToken GenerateToken(UserInfo userInfo)
+        private async Task<UserToken> GenerateTokenAsync(UserInfo userInfo)
         {
-            var claims = new List<Claim>()
+            //var claims = new List<Claim>()
+            //{
+            //    new Claim(JwtRegisteredClaimNames.UniqueName, userInfo.Email),
+            //    new Claim(ClaimTypes.Name, userInfo.Email),
+            //    new Claim("mac", "macoratti.net"),
+            //    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            //};
+            var user = await _signInManager.UserManager.FindByEmailAsync(userInfo.Email);
+
+            var roles = await _signInManager.UserManager.GetRolesAsync(user);
+
+            var claims = new List<Claim>();
+
+            claims.Add(new Claim(ClaimTypes.Name, userInfo.Email));
+
+            foreach (var role in roles)
             {
-                new Claim(JwtRegisteredClaimNames.UniqueName, userInfo.Email),
-                new Claim(ClaimTypes.Name, userInfo.Email),
-                new Claim("mac", "macoratti.net"),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+                claims.Add(new Claim(ClaimTypes.Role, role));
+            }
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
             var creds =
                new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
