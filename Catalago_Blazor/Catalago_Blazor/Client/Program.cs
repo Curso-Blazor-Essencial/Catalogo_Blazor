@@ -1,3 +1,4 @@
+using Blazor_Catalogo.Client.Auth;
 using Catalago_Blazor.Client;
 using Catalago_Blazor.Client.Auth;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -12,7 +13,12 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 //Depednências do pacote Nugget
 builder.Services.AddAuthorizationCore();
 //Depedência do arquivo de Autenticação de criamos
-builder.Services.AddScoped<AuthenticationStateProvider, DemoAuthStateProvider>();
+builder.Services.AddScoped<TokenAuthenticationProvider>();
+builder.Services.AddScoped<IauthorizeService, TokenAuthenticationProvider>(
+    provider => provider.GetRequiredService<TokenAuthenticationProvider>());
+builder.Services.AddScoped<AuthenticationStateProvider, TokenAuthenticationProvider>(
+    provider => provider.GetRequiredService<TokenAuthenticationProvider>());
+
 
 
 await builder.Build().RunAsync();
