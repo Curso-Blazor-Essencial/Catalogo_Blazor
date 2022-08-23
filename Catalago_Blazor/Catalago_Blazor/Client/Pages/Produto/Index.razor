@@ -2,6 +2,7 @@
 @using Catalago_Blazor.Client.Pages.Categoria
 @inject HttpClient http
 @inject NavigationManager navigation
+@attribute [Authorize]
 
 <AuthorizeView Roles="Admin">
     <Authorized>

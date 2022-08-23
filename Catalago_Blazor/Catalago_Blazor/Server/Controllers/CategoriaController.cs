@@ -2,6 +2,7 @@
 using Catalago_Blazor.Server.Context;
 using Catalago_Blazor.Server.Util;
 using Catalago_Blazor.Shared.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,7 @@ namespace Catalago_Blazor.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CategoriaController : ControllerBase
     {
         private readonly AppDbContext context;
@@ -21,11 +23,12 @@ namespace Catalago_Blazor.Server.Controllers
         }
 
         [HttpGet("todas")]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Categoria>>> Get()
         {
             return await context.Categorias.AsNoTracking().ToListAsync();
         }
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<List<Categoria>>> Get([FromQuery] Paginacao paginacao, [FromQuery] string? nome)
         {
@@ -40,7 +43,7 @@ namespace Catalago_Blazor.Server.Controllers
             return await queryable.Paginar(paginacao).ToListAsync();
 
         }
-
+        [AllowAnonymous]
         [HttpGet("{id}", Name = "GetCategoria")]
 
         public async Task<ActionResult<Categoria>> Get(int id)
